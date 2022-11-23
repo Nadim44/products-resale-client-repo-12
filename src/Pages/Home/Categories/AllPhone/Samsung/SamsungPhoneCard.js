@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SamsungPhoneCard = ({ samsungPhone }) => {
+const SamsungPhoneCard = ({ samsungPhone, setProduct }) => {
     const { img, title, description, _id, price } = samsungPhone;
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -10,11 +10,21 @@ const SamsungPhoneCard = ({ samsungPhone }) => {
                 <h2 className="card-title font-bold text-2xl">{title}</h2>
                 <p>{description.slice(0, 150)}</p>
                 <p><span className='text-xl font-semibold text-orange-600'>Travel Cost</span> : $ {price}</p>
+
                 <div className="card-actions justify-end">
+                    <label
+                        htmlFor="booking-modal"
+                        className="btn btn-primary"
+                        onClick={() => setProduct(samsungPhone)}
+                    >Book now</label>
+                </div>
+
+
+                {/* <div className="card-actions justify-end">
                     <Link to={`/place/${_id}`}>
                         <button className="btn btn-primary">Details</button>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import BookingModal from '../BookingModal/BookingModal';
 import SamsungPhoneCard from './SamsungPhoneCard';
 
 const Samsung = () => {
     const [samsungPhones, setSamsungPhones] = useState([])
+    const [product, setProduct] = useState(null);
 
     useEffect(() => {
         fetch('samsung.json')
@@ -13,18 +15,22 @@ const Samsung = () => {
     return (
         <div>
             total phone: {samsungPhones.length}
-            {
-                samsungPhones.map(samsungPhone => <SamsungPhoneCard
-                    key={samsungPhone._id}
-                    samsungPhone={samsungPhone}></SamsungPhoneCard>)
-            }
-            {
-                // samsungPhone.map(place => <PlaceCard
-                //     key={place._id}
-                //     place={place}
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                {
+                    samsungPhones.map(samsungPhone => <SamsungPhoneCard
+                        key={samsungPhone._id}
+                        samsungPhone={samsungPhone}
+                        setProduct={setProduct}
+                    ></SamsungPhoneCard>)
+                }
+            </div>
 
-                // ></PlaceCard>)
-            }
+            {
+                product &&
+                <BookingModal
+                    product={product}
+                    setProduct={setProduct}
+                ></BookingModal>}
         </div>
     );
 };

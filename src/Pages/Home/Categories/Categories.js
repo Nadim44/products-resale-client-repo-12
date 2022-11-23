@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Categories = () => {
     return (
         <div>
-            <h1 className='text-center text-3xl semi-bold text-orange-600'>product categories section</h1>
+            <h1 className='text-center text-3xl font-bold text-orange-600'>product categories section</h1>
             <div className='text-center '>
 
                 {/* <button className="btn btn-warning"><Link to='/iphone'>I Phone</Link></button> */}
