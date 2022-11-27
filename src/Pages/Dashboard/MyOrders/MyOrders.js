@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import { useQuery } from '@tanstack/react-query'
-import { async } from '@firebase/util';
+
 
 const MyOrders = () => {
     const { user } = useContext(AuthContext)
@@ -35,7 +35,7 @@ const MyOrders = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {
+                        {/* {
                             bookings.map((booking, i) => <tr key={booking._id}>
                                 <th>{i + 1}</th>
                                 <td>{booking.buyerName}</td>
@@ -43,7 +43,7 @@ const MyOrders = () => {
                                 <td>{booking.email}</td>
 
                             </tr>)
-                        }
+                        } */}
                     </tbody>
                 </table>
             </div>
