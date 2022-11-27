@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
+import DashboardLayout from "../../Layout/DashboardLayout";
 import Main from "../../Layout/Main";
 import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
+import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
 
 import Oppo from "../../Pages/Home/Categories/AllPhone/Oppo/Oppo";
 
@@ -33,21 +35,19 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
-            // {
-            //     path: '/samsung',
-            //     element: <Samsung></Samsung>
-            // },
-            // {
-            //     path: '/oppo',
-            //     element: <Oppo></Oppo>
-            // },
 
         ]
     },
     {
         path: '/dashboard',
-        // element: <Dashboard></Dashboard>
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                path: '/dashboard',
+                // element: <Dashboard></Dashboard>
+                element: <MyOrders></MyOrders>
+            }
+        ]
     }
 
 ])
