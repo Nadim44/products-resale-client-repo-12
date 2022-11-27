@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import useToken from '../../hooks/useToken';
 
 
 const Login = () => {
@@ -29,7 +30,8 @@ const Login = () => {
                 const user = result.user;
                 console.log(user)
                 // setLoginUserEmail(data.email);
-                navigate(from, { replace: true })
+                // navigate(from, { replace: true })
+                saveUser(data.email, data.password)
 
             })
             .catch(error => {
@@ -38,6 +40,38 @@ const Login = () => {
             })
 
     }
+
+    /////
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                // console.log('saveuser', data)
+                // navigate('/');
+                getUserToken(email)
+                // setLoginUserEmail(email)
+            });
+    }
+
+    const getUserToken = email => {
+        fetch(`http://localhost:5000/jwt?email=${email}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.accessToken) {
+                    localStorage.setItem('accessToken', data.accessToken)
+                    navigate(from, { replace: true })
+                }
+            })
+    }
+
+
 
     // const handleGoogle = () => {
     //     googleSignIn()
