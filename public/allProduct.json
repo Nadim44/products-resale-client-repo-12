@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Samsung Galaxy J2",
+        "categoryName": "Samsung",
+        "originalPrice": 9990,
+        "resalePrice": 6000,
+        "usedYear": "8 month",
+        "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-j2-1.jpg",
+        "time": "12-11-2022",
+        "location": "Narsingdi"
+    },
+    {
+        "name": "Samsung Galaxy J7",
+        "categoryName": "Samsung",
+        "originalPrice": 19000,
+        "resalePrice": 13000,
+        "usedYear": "7 month",
+        "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-j7-j700f-1.jpg",
+        "time": "17-11-2022",
+        "location": "Madhabdi"
+    },
+    {
+        "name": "Samsung Galaxy A23",
+        "categoryName": "Samsung",
+        "originalPrice": 32000,
+        "resalePrice": 23000,
+        "usedYear": "11 month",
+        "img": "https://www.google.com/search?q=samsung+galaxy+a23+pricture&rlz=1C1BNSD_enBD1008BD1008&sxsrf=ALiCzsbNUd1yiJuJ5Ct3jR6-F0gh53Gi-A%3A1669518078302&ei=_tKCY--UEvG0mgfg1bvgBQ&ved=0ahUKEwjvi4PAr837AhVxmuYKHeDqDlwQ4dUDCA8&uact=5&oq=samsung+galaxy+a23+pricture&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQgAQQDTIHCAAQgAQQDTIGCAAQFhAeMgYIABAWEB4yBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoECCMQJzoFCAAQgAQ6CAgAEIAEEMsBOggIABCABBDJAzoECAAQQzoHCCMQsAIQJzoKCAAQgAQQyQMQDUoECEEYAEoECEYYAFDYA1jKG2DWImgCcAF4AYABlwGIAasNkgEENi4xMJgBAKABAcgBCsABAQ&sclient=gws-wiz-serp#imgrc=fMW1iFNZPqulvM",
+        "time": "18-11-2022",
+        "location": "Gazipur"
+    },
+    {
+        "name": "Redmi Note 11",
+        "categoryName": "Redmi",
+        "originalPrice": 23499,
+        "resalePrice": 17000,
+        "usedYear": "5 month",
+        "img": "https://www.mobiledokan.com/wp-content/uploads/2022/03/Xiaomi-Redmi-Note-11.jpg",
+        "time": "09-11-2022",
+        "location": "Madhabdi"
+    },
+    {
+        "name": "Redmi Note 10",
+        "categoryName": "Redmi",
+        "originalPrice": 20999,
+        "resalePrice": 14000,
+        "usedYear": "7 month",
+        "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note10-11.jpg",
+        "time": "04-11-2022",
+        "location": "Narsingdi"
+    },
+    {
+        "name": "Redmi Note 8",
+        "categoryName": "Redmi",
+        "originalPrice": 18999,
+        "resalePrice": 13000,
+        "usedYear": "8 month",
+        "img": "https://www.91-img.com/gallery_images_uploads/3/f/3f95bd46111647a31fbd27660e11eb4ef3db20ed.jpg?tr=h-550,w-0,c-at_max",
+        "time": "15-11-2022",
+        "location": "Gazipur"
+    },
+    {
+        "name": "OPPO A1K",
+        "categoryName": "Oppo",
+        "originalPrice": 9999,
+        "resalePrice": 6000,
+        "usedYear": "6 month",
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a1k.jpg",
+        "time": "02-11-2022",
+        "location": "Narsingdi"
+    },
+    {
+        "name": "OPPO A12",
+        "categoryName": "Oppo",
+        "originalPrice": 13990,
+        "resalePrice": 9000,
+        "usedYear": "7 month",
+        "img": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a12-1.jpg",
+        "time": "16-11-2022",
+        "location": "Gazipur"
+    },
+    {
+        "name": "OPPO A54",
+        "categoryName": "Oppo",
+        "originalPrice": 17990,
+        "resalePrice": 12000,
+        "usedYear": "7 month",
+        "img": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a54-1.jpg",
+        "time": "19-11-2022",
+        "location": "Narsingdi"
+    }
+]

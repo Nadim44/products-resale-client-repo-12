@@ -1,0 +1,17 @@
+[
+    {
+        "category": "Samsung",
+        "img": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMHBob25lfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "allProduct": []
+    },
+    {
+        "category": "Redmi",
+        "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-9-2.jpg",
+        "allProduct": []
+    },
+    {
+        "category": "Oppo",
+        "img": "https://cdn.vox-cdn.com/thumbor/w1PCxrfxOsxxZg1UqZNX944VGao=/0x0:2040x1360/1400x1400/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/12026853/DSCF6490.jpg",
+        "allProduct": []
+    }
+]

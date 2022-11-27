@@ -8,9 +8,9 @@ const Categories = () => {
             <div className='text-center '>
 
                 {/* <button className="btn btn-warning"><Link to='/iphone'>I Phone</Link></button> */}
-                <h2><Link to='/iphone'>I Phone</Link></h2>
+                {/* <h2><Link to='/iphone'>I Phone</Link></h2>
                 <h2><Link to='/samsung'>Samsung</Link></h2>
-                <h2><Link to='/oppo'>Oppo</Link></h2>
+                <h2><Link to='/oppo'>Oppo</Link></h2> */}
             </div>
         </div>
     );
