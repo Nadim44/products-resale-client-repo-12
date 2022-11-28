@@ -28,12 +28,13 @@ const DashboardLayout = () => {
                         {/* <li><Link to='/dashboard/allusers'>All Users</Link></li> */}
 
 
+                        <li><Link to='/dashboard/addproduct'>Add a Product</Link></li>
+                        <li><Link to='/dashboard/manageproducts'>Manage Products</Link></li>
                         {
                             isAdmin && <>
                                 <li><Link to='/dashboard/allusers'>All Users</Link></li>
                             </>
                         }
-
                     </ul>
 
                 </div>
