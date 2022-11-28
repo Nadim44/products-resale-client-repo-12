@@ -1,13 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import { useQuery } from '@tanstack/react-query'
+import Loading from '../../Shared/Loading/Loading';
 
 
 const MyOrders = () => {
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
     const url = `http://localhost:5000/bookings?email=${user?.email}`
 
-    const { data: bookings = [] } = useQuery({
+    const { data: bookings = [], isLoading } = useQuery({
         queryKey: ['bookings', user?.email],
         queryFn: async () => {
             const res = await fetch(url, {
@@ -16,9 +17,13 @@ const MyOrders = () => {
                 }
             });
             const data = await res.json();
+            // console.log(data)
             return data;
         }
     })
+    if (isLoading) {
+        return <Loading></Loading>
+    }
 
     return (
         <div>
@@ -34,16 +39,17 @@ const MyOrders = () => {
 
                         </tr>
                     </thead>
+
                     <tbody>
-                        {/* {
-                            bookings.map((booking, i) => <tr key={booking._id}>
+                        {bookings?.length &&
+                            bookings?.map((booking, i) => <tr key={booking._id}>
                                 <th>{i + 1}</th>
                                 <td>{booking.buyerName}</td>
                                 <td>{booking.name}</td>
                                 <td>{booking.email}</td>
 
                             </tr>)
-                        } */}
+                        }
                     </tbody>
                 </table>
             </div>

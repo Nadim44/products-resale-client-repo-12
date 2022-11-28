@@ -5,17 +5,18 @@ import toast from 'react-hot-toast';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useToken from '../../hooks/useToken';
 
+
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const { createUser, updateUser } = useContext(AuthContext)
     const [signUpError, setSignUpError] = useState('');
-    // const [createdUserEmail, setCreatedUserEmail] = useState('')
-    // const [token] = useToken(createdUserEmail)
+    // const [createdUserEmail, setCreatedUserEmail] = useState('');
+    // const [token] = useToken(createdUserEmail);
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     // if (token) {
-    //     navigate('/')
+    //     navigate('/');
     // }
 
     const handleSignUp = (data) => {
@@ -70,6 +71,8 @@ const SignUp = () => {
             })
     }
 
+
+
     return (
         <div className='h-[800px]  flex justify-center items-center'>
             <div className='w-96 p-7'>
@@ -112,6 +115,10 @@ const SignUp = () => {
                 <p>Already have an account <Link className='text-secondary' to='/login'>Please Login</Link></p>
                 <div className="divider">OR</div>
                 <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                {/* <select {...register("userType")} className="select select-bordered">
+                            <option >Seller</option>
+                            <option>Buyer</option>
+                        </select> */}
             </div>
         </div>
     );
