@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 import BookingModal from './BookingModal/BookingModal';
 import SingleProduct from './SingleProduct';
 
@@ -17,7 +18,9 @@ const Category = () => {
                 SetCategoryService(data)
             })
     })
-
+    // if (isLoading) {
+    //     return <Loading></Loading>
+    // }
     return (
         <div>
 
