@@ -6,6 +6,7 @@ import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
 import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import ManageProducts from "../../Pages/Dashboard/ManageProducts/ManageProducts";
 import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
+import Blog from "../../Pages/Home/Blog/Blog";
 
 import Oppo from "../../Pages/Home/Categories/AllPhone/Oppo/Oppo";
 
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            },
+
 
         ]
     },
