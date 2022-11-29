@@ -7,7 +7,9 @@ import Loading from '../../Shared/Loading/Loading';
 const ManageProducts = () => {
     const [deletingProduct, setDeletingProduct] = useState(null)
 
-
+    const closeModal = () => {
+        setDeletingProduct(null)
+    }
 
     const { data: products, isLoading, refetch } = useQuery({
         queryKey: ['addproduct'],
@@ -28,7 +30,7 @@ const ManageProducts = () => {
     })
 
     const handleDeleteProduct = product => {
-        // console.log(product)
+        console.log(product)
         fetch(`http://localhost:5000/addproduct/${product._id}`, {
             method: 'DELETE',
             headers: {
@@ -45,9 +47,7 @@ const ManageProducts = () => {
             })
     }
 
-    const closeModal = () => {
-        setDeletingProduct(null)
-    }
+
 
     if (isLoading) {
         return <Loading></Loading>
@@ -68,7 +68,6 @@ const ManageProducts = () => {
                                 <p>Number: <span className='text-orange-600 ml-2'>{product.number}</span></p>
                                 <p>Location: <span className='text-orange-600 ml-2'>{product.location}</span></p>
                                 <div className="card-actions justify-end ">
-                                    {/* <button onClick={() => setDeletingProduct(product)} htmlFor="confirmation-modal" className="btn btn-primary">Delete</button> */}
                                     <label onClick={() => setDeletingProduct(product)} htmlFor="confirmation-modal" className="btn btn-sm btn-error">Delete</label>
                                 </div>
                             </div>
