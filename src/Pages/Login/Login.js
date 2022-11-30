@@ -111,7 +111,7 @@ const Login = () => {
                 <p>New to Doctors Portal <Link className='text-secondary' to='/signup'>Create new account</Link></p>
                 <div className="divider">OR</div>
                 <GoogleLogin></GoogleLogin>
-                <GitHubLogin></GitHubLogin>
+                {/* <GitHubLogin></GitHubLogin> */}
 
             </div>
         </div>

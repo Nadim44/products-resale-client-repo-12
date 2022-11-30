@@ -8,10 +8,6 @@ import ManageProducts from "../../Pages/Dashboard/ManageProducts/ManageProducts"
 import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
 import Payment from "../../Pages/Dashboard/Payment/Payment";
 import Blog from "../../Pages/Home/Blog/Blog";
-
-import Oppo from "../../Pages/Home/Categories/AllPhone/Oppo/Oppo";
-
-import Samsung from "../../Pages/Home/Categories/AllPhone/Samsung/Samsung";
 import Home from "../../Pages/Home/Home/Home";
 import Category from "../../Pages/Home/HomeCategory/Category";
 import Login from "../../Pages/Login/Login";
