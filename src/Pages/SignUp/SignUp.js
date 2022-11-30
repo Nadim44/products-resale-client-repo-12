@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../Contexts/AuthProvider';
-import useToken from '../../hooks/useToken';
 
 
 const SignUp = () => {
@@ -119,13 +118,9 @@ const SignUp = () => {
                     <input className='btn btn-accent w-full mt-4' value='Sign Up' type="submit" />
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>
-                <p>Already have an account <Link className='text-secondary' to='/login'>Please Login</Link></p>
-                <div className="divider">OR</div>
-                <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
-                {/* <select {...register("userType")} className="select select-bordered">
-                            <option >Seller</option>
-                            <option>Buyer</option>
-                        </select> */}
+                <p>Already have an account. <Link className='text-secondary' to='/login'>Please Login</Link></p>
+
+
             </div>
         </div>
     );

@@ -109,7 +109,7 @@ const Login = () => {
                     </div>
 
                 </form>
-                <p>New to Doctors Portal <Link className='text-secondary' to='/signup'>Create new account</Link></p>
+                <p>New to Phone Resale <Link className='text-secondary' to='/signup'>Create new account</Link></p>
                 <div className="divider">OR</div>
                 <GoogleLogin></GoogleLogin>
                 <GitHubLogin></GitHubLogin>
