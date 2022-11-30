@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SingleCategory = ({ hcategory }) => {
     const { category, _id, img } = hcategory;
+
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img className='h-72' src={img} alt="Shoes" /></figure>

@@ -3,6 +3,7 @@ import SingleCategory from './SingleCategory';
 
 const HomeCategory = () => {
     const [homeCategory, setHomeCategory] = useState([])
+
     useEffect(() => {
         fetch('http://localhost:5000/category')
             // fetch('homeCategory.json')

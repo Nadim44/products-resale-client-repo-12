@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useToken from '../../hooks/useToken';
+import GitHubLogin from '../Shared/SocialLogin/GitHubLogin';
+
 import GoogleLogin from '../Shared/SocialLogin/GoogleLogin';
 
 
@@ -118,6 +120,8 @@ const Login = () => {
                 {/* <button onClick={handleGoogle} className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
                 {/* <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
                 <GoogleLogin></GoogleLogin>
+
+
             </div>
         </div>
     );
