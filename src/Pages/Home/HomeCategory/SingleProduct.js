@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleProduct = ({ singleProduct, setProduct }) => {
-    const { name, img, originalPrice, resalePrice, time, location, usedYear } = singleProduct;
+    const { name, img, originalPrice, resalePrice, time, location, usedYear, seller } = singleProduct;
     // console.log(singleproduct)
     return (
         <div>
@@ -9,15 +9,12 @@ const SingleProduct = ({ singleProduct, setProduct }) => {
                 <figure><img src={img} className='h-72' alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title font-bold text-2xl">{name}</h2>
-
-                    {/* <p><span className='text-xl font-semibold text-orange-600'>Travel Cost</span> : $ {price}</p> */}
-                    <p>Original Price: <span className='text-orange-600 ml-2'>{originalPrice}</span> taka</p>
-                    <p>Resale Price: <span className='text-orange-600 ml-2'>{resalePrice}</span></p>
+                    <p>Seller Name: <span className='text-orange-600 ml-2'>{seller}</span> </p>
+                    <p>Original Price: <span className='text-orange-600 ml-2'>{originalPrice} </span> Taka</p>
+                    <p>Resale Price: <span className='text-orange-600 ml-2'>{resalePrice}</span> Take</p>
                     <p>Use of Year: <span className='text-orange-600 ml-2'>{usedYear}</span></p>
                     <p>Location <span className='text-orange-600 ml-2'>{location}</span></p>
-                    {/* <p> <span className='text-orange-600 ml-2'>{time}</span></p> */}
-
-
+                    <p>Posted Date: <span className='text-orange-600 ml-2'>{time}</span></p>
                     <div className="card-actions justify-end">
                         <label
                             htmlFor="booking-modal"
@@ -25,13 +22,6 @@ const SingleProduct = ({ singleProduct, setProduct }) => {
                             onClick={() => setProduct(singleProduct)}
                         >Book now</label>
                     </div>
-
-
-                    {/* <div className="card-actions justify-end">
-                    <Link to={`/place/${_id}`}>
-                        <button className="btn btn-primary">Details</button>
-                    </Link>
-                </div> */}
                 </div>
             </div>
         </div>

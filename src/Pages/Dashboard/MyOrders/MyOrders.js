@@ -28,33 +28,7 @@ const MyOrders = () => {
 
     return (
         <div>
-            {/* <h2 className='text-3xl mb-5'>My Orders</h2>
-            <div className="overflow-x-auto">
-                <table className="table w-full">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Buyer Name</th>
-                            <th>Product Name</th>
-                            <th>Email</th>
-
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        {bookings?.length &&
-                            bookings?.map((booking, i) => <tr key={booking._id}>
-                                <th>{i + 1}</th>
-                                <td>{booking.buyerName}</td>
-                                <td>{booking.name}</td>
-                                <td>{booking.email}</td>
-
-                            </tr>)
-                        }
-                    </tbody>
-                </table>
-            </div> */}
-            <h2 className='text-3xl mb-5'>My Orders: {bookings.length}</h2>
+            <h2 className='text-3xl mb-5'>Total Orders: {bookings.length}</h2>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 m-6'>
                 {bookings?.length &&
                     bookings?.map(booking =>
@@ -75,7 +49,7 @@ const MyOrders = () => {
                                         </Link>
                                     }
                                     {
-                                        booking.price && booking.paid && <button className='text-green-500'>Paid</button>
+                                        booking.price && booking.paid && <button className='text-green-500 font-bold text-xl'>Paid</button>
                                     }
                                 </div>
                             </div>

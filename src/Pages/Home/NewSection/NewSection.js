@@ -3,16 +3,16 @@ import React from 'react';
 const NewSection = () => {
     return (
         <div>
-            <div className="hero my-20 bg-gray-300 pb-16 rounded-lg">
+            <div className="hero my-20 bg-gray-200 pb-16 rounded-lg">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className='relative w-1/2 mb-4'>
-                        <img src="https://media.istockphoto.com/id/1282610198/photo/airplane-flying-on-tropical-summer-vacation.jpg?b=1&s=170667a&w=0&k=20&c=6zA6DOTOhgszSdaI7OmEWAeYjHl7SSNi59Fh63jGBx4=" alt='' className="w-4/5 h-full rounded-lg shadow-2xl border-8" />
-                        <img src="https://content.thriveglobal.com/wp-content/uploads/2020/10/Travel.jpg" alt='' className="absolute right-5 top-1/2 border-8 w-3/5 rounded-lg shadow-2xl" />
+                        <img src="https://fdn.gsmarena.com/imgroot/news/19/12/phones-of-the-decade/-727w2/gsmarena_001.jpg" alt='' className="w-4/5 h-full rounded-lg shadow-2xl border-8" />
+
                     </div>
                     <div className='w-1/2 sm:mt-4 '>
-                        <p className='text-3xl text-oran text-orange-600 font-bold '>About Travel</p>
-                        <p className="mb-4 pt-6">A lot of people around the world travel every year to many places. Moreover, it is important to travel to humans.Some travel to learn more while some travel to take a break from their life.</p>
-                        <p className="pb-6">  No matter the reason, travelling opens a big door for us to explore the world beyond our imagination and indulge in many things.</p>
+                        <p className='text-3xl text-oran text-orange-600 font-bold '>About Resale</p>
+                        <p className="mb-4 pt-6">Resale Products which means non-proprietary Goods that Seller purchases from original manufacturers and then resells to customers under the original manufacturer's trade, brand and/or product names.</p>
+                        <p className="pb-6"> They are buying used cars for resale to overseas markets. The new model has solid resale value. The number of home resales has risen steeply.</p>
                         {/* <button className="btn btn-primary">Know more</button> */}
                     </div>
                 </div>

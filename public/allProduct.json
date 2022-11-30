@@ -7,7 +7,8 @@
         "usedYear": "8 month",
         "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-j2-1.jpg",
         "time": "12-11-2022",
-        "location": "Narsingdi"
+        "location": "Narsingdi",
+        "seller": "Nadim Mahamud"
     },
     {
         "name": "Samsung Galaxy J7",
@@ -17,7 +18,8 @@
         "usedYear": "7 month",
         "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-j7-j700f-1.jpg",
         "time": "17-11-2022",
-        "location": "Madhabdi"
+        "location": "Madhabdi",
+        "seller": "Emon Hossain"
     },
     {
         "name": "Samsung Galaxy A23",
@@ -25,9 +27,10 @@
         "originalPrice": 32000,
         "resalePrice": 23000,
         "usedYear": "11 month",
-        "img": "https://www.google.com/search?q=samsung+galaxy+a23+pricture&rlz=1C1BNSD_enBD1008BD1008&sxsrf=ALiCzsbNUd1yiJuJ5Ct3jR6-F0gh53Gi-A%3A1669518078302&ei=_tKCY--UEvG0mgfg1bvgBQ&ved=0ahUKEwjvi4PAr837AhVxmuYKHeDqDlwQ4dUDCA8&uact=5&oq=samsung+galaxy+a23+pricture&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQgAQQDTIHCAAQgAQQDTIGCAAQFhAeMgYIABAWEB4yBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoECCMQJzoFCAAQgAQ6CAgAEIAEEMsBOggIABCABBDJAzoECAAQQzoHCCMQsAIQJzoKCAAQgAQQyQMQDUoECEEYAEoECEYYAFDYA1jKG2DWImgCcAF4AYABlwGIAasNkgEENi4xMJgBAKABAcgBCsABAQ&sclient=gws-wiz-serp#imgrc=fMW1iFNZPqulvM",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGfHDXpiHUBjM8jPLrj7qzkiNbCJRUI4lZNbz-kc2q&s",
         "time": "18-11-2022",
-        "location": "Gazipur"
+        "location": "Gazipur",
+        "seller": "Najmul Mia"
     },
     {
         "name": "Redmi Note 11",
@@ -37,7 +40,8 @@
         "usedYear": "5 month",
         "img": "https://www.mobiledokan.com/wp-content/uploads/2022/03/Xiaomi-Redmi-Note-11.jpg",
         "time": "09-11-2022",
-        "location": "Madhabdi"
+        "location": "Madhabdi",
+        "seller": "Aowlad Hossain"
     },
     {
         "name": "Redmi Note 10",
@@ -47,7 +51,8 @@
         "usedYear": "7 month",
         "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note10-11.jpg",
         "time": "04-11-2022",
-        "location": "Narsingdi"
+        "location": "Narsingdi",
+        "seller": "Nadim Mahamud"
     },
     {
         "name": "Redmi Note 8",
@@ -57,7 +62,8 @@
         "usedYear": "8 month",
         "img": "https://www.91-img.com/gallery_images_uploads/3/f/3f95bd46111647a31fbd27660e11eb4ef3db20ed.jpg?tr=h-550,w-0,c-at_max",
         "time": "15-11-2022",
-        "location": "Gazipur"
+        "location": "Gazipur",
+        "seller": "Sakil Mia"
     },
     {
         "name": "OPPO A1K",
@@ -67,7 +73,8 @@
         "usedYear": "6 month",
         "img": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a1k.jpg",
         "time": "02-11-2022",
-        "location": "Narsingdi"
+        "location": "Narsingdi",
+        "seller": "Saykul Hossain"
     },
     {
         "name": "OPPO A12",
@@ -77,7 +84,8 @@
         "usedYear": "7 month",
         "img": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a12-1.jpg",
         "time": "16-11-2022",
-        "location": "Gazipur"
+        "location": "Gazipur",
+        "seller": "Nadim Mahamud"
     },
     {
         "name": "OPPO A54",
@@ -87,6 +95,7 @@
         "usedYear": "7 month",
         "img": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a54-1.jpg",
         "time": "19-11-2022",
-        "location": "Narsingdi"
+        "location": "Narsingdi",
+        "seller": "Aowlad Hossain"
     }
 ]

@@ -109,6 +109,13 @@ const SignUp = () => {
 
                         {errors.password && <p className='text-red-600'>{errors.password?.message}</p>}
                     </div>
+                    <div className="form-control w-full max-w-xs mb-2">
+                        <label className="label"><span className="label-text">User Type</span> </label>
+                        <select className="select select-bordered w-full max-w-xs">
+                            <option>Seller</option>
+                            <option>Buyer</option>
+                        </select>
+                    </div>
                     <input className='btn btn-accent w-full mt-4' value='Sign Up' type="submit" />
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>

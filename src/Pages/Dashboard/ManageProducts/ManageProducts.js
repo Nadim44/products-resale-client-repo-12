@@ -47,14 +47,12 @@ const ManageProducts = () => {
             })
     }
 
-
-
     if (isLoading) {
         return <Loading></Loading>
     }
     return (
         <div>
-            Manage Products: {products?.length}
+            Total Products: {products?.length}
 
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 m-6'>
                 {

@@ -1,10 +1,10 @@
 - Website name: 'Phone Resale'
 
-- [Client Side Private repo link](https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-Nadim44)
+- [Client Side Private repo link](https://github.com/programming-hero-web-course-4/b612-used-products-resale-clients-side-Nadim44/commits/main)
 
-- [Server Side Private repo link](https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-Nadim44)
+- [Server Side Private repo link](https://github.com/programming-hero-web-course-4/b612-used-products-resale-server-side-Nadim44/commits/main)
 
-- live website link-('travel-world-9ac16.web.app')
+- live website link-('https://products-resale-e5dcd.web.app/')
 
 - used Tailwinds and DaisyUI
 

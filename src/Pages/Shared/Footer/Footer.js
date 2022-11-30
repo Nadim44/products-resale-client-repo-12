@@ -3,14 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
-            <footer
-                // style={{
-                //     background: `url(${footer})`,
-                //     backgroundSize: 'cover'
-                // }}
-                className='p-10'>
-                <div className="footer">
+        <div className='bg-gray-400'>
+            <footer className='p-10'>
+                <div className="footer ">
                     <div>
                         <span className="footer-title">Services</span>
                         <Link to='/' className="link link-hover">Branding</Link>
@@ -33,7 +28,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='text-center mt-24'>
-                    <p>Copyright © 2022 - All right reserved by Nadim Group Of Ltd</p>
+                    <p>Copyright © 2022 - All right reserved by Nadim Group of Ltd</p>
                 </div>
             </footer>
         </div>

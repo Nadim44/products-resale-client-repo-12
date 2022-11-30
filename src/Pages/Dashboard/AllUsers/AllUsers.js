@@ -59,34 +59,26 @@ const AllUsers = () => {
 
     return (
         <div>
-            <h2 className="text-3xl">All Users</h2>
-            <div className="overflow-x-auto">
-                <table className="table w-full">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Admin</th>
-                            <th>Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            users.map((user, i) => <tr key={user._id}>
-                                <th>{i + 1}</th>
-                                <td>{user.name}</td>
-                                <td>{user.email}</td>
-                                <td>{user?.role !== 'admin' && <button onClick={() => handleMakeAdmin(user._id)} className='btn btn-xs btn-primary'>Verify</button>}</td>
-                                {/* <td><button onClick={() => handleMakeAdmin(user._id)} className='btn btn-xs btn-primary'>Verify</button></td> */}
-                                <td>
-                                    <label onClick={() => { setDeletingUser(user) }} htmlFor="deleteConfirmation-modal" className="btn btn-sm btn-error">Delete</label>
-                                </td>
-                            </tr>)
-                        }
-                    </tbody>
-                </table>
+            <h2 className="text-3xl">All Users: {users.length}</h2>
+
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 m-6'>
+                {
+                    users?.map(user =>
+                        <div key={user._id} className="card card-compact w-96 bg-base-100 shadow-xl">
+
+                            <div className="card-body">
+
+                                <p>User Name: <span className='text-orange-600 ml-2'>{user.name}</span></p>
+                                <p>User Email: <span className='text-orange-600 ml-2'>{user.email}</span></p>
+                                <p> {user?.role !== 'admin' && <button onClick={() => handleMakeAdmin(user._id)} className='btn btn-sm btn-primary'>Verify</button>}</p>
+                                <p> <label onClick={() => { setDeletingUser(user) }} htmlFor="deleteConfirmation-modal" className="btn btn-sm btn-error">Delete</label></p>
+
+                            </div>
+                        </div>
+                    )
+                }
             </div>
+
             {
                 deletingUser && <DeleteConfirmationModal
                     title={`Are you sure you want to delete?`}
@@ -98,7 +90,7 @@ const AllUsers = () => {
 
                 </DeleteConfirmationModal>
             }
-        </div>
+        </div >
     );
 };
 
