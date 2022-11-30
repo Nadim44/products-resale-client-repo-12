@@ -43,7 +43,7 @@ const GitHubLogin = () => {
 
     return (
         <div className='text-center mt-2'>
-            <button onClick={handleGithubSignIn} className='btn btn-ghost bg-gray-600'>  <span className='p-2 font-bold'>CONTINUE WITH GITHUB</span></button>
+            <button onClick={handleGithubSignIn} className='btn btn-outline w-full'>  <span className='p-2 font-bold'>CONTINUE WITH GITHUB</span></button>
         </div>
     );
 };

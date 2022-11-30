@@ -76,13 +76,6 @@ const Login = () => {
 
 
 
-    // const handleGoogle = () => {
-    //     googleSignIn()
-    //         .then(result => {
-    //             const user = result.user;
-    //         })
-    //         .catch(error => console.error(error))
-    // }
 
     return (
         <div className='h-[800px]  flex justify-center items-center'>
@@ -117,10 +110,8 @@ const Login = () => {
                 </form>
                 <p>New to Doctors Portal <Link className='text-secondary' to='/signup'>Create new account</Link></p>
                 <div className="divider">OR</div>
-                {/* <button onClick={handleGoogle} className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
-                {/* <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
                 <GoogleLogin></GoogleLogin>
-
+                <GitHubLogin></GitHubLogin>
 
             </div>
         </div>
