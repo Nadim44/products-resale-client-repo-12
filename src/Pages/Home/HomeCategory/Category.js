@@ -11,7 +11,7 @@ const Category = () => {
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allproducts?categoryName=${service?.category}`)
+        fetch(`https://assignment-12-server-nu.vercel.app/allproducts?categoryName=${service?.category}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)

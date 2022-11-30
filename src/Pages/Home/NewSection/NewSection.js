@@ -13,7 +13,7 @@ const NewSection = () => {
                         <p className='text-3xl text-oran text-orange-600 font-bold '>About Resale</p>
                         <p className="mb-4 pt-6">Resale Products which means non-proprietary Goods that Seller purchases from original manufacturers and then resells to customers under the original manufacturer's trade, brand and/or product names.</p>
                         <p className="pb-6"> They are buying used cars for resale to overseas markets. The new model has solid resale value. The number of home resales has risen steeply.</p>
-                        {/* <button className="btn btn-primary">Know more</button> */}
+
                     </div>
                 </div>
             </div>

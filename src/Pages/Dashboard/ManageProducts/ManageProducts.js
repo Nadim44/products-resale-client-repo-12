@@ -15,7 +15,7 @@ const ManageProducts = () => {
         queryKey: ['addproduct'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/addproduct', {
+                const res = await fetch('https://assignment-12-server-nu.vercel.app/addproduct', {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -31,7 +31,7 @@ const ManageProducts = () => {
 
     const handleDeleteProduct = product => {
         console.log(product)
-        fetch(`http://localhost:5000/addproduct/${product._id}`, {
+        fetch(`https://assignment-12-server-nu.vercel.app/addproduct/${product._id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
