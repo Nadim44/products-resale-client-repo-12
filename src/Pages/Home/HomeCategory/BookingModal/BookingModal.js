@@ -28,7 +28,7 @@ const BookingModal = ({ product, setProduct }) => {
             name
 
         }
-        // console.log(booking)
+
         fetch('https://assignment-12-server-nu.vercel.app/bookings', {
             method: 'POST',
             headers: {

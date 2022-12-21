@@ -14,7 +14,6 @@ const Category = () => {
         fetch(`https://assignment-12-server-nu.vercel.app/allproducts?categoryName=${service?.category}`)
             .then(res => res.json())
             .then(data => {
-                // console.log(data)
                 SetCategoryService(data)
             })
     })
